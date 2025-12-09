@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\..\DB\Main\EventMonitoringSystem.DB.Main.Domain\EventMonitoringSystem.DB.Main.Domain.csproj" />
+      <ProjectReference Include="..\..\DB\Main\EventMonitoringSystem.DB.Main.Infrastructure\EventMonitoringSystem.DB.Main.Infrastructure.csproj" />
+      <ProjectReference Include="..\EventMonitoringSystem.Core.Application\EventMonitoringSystem.Core.Application.csproj" />
+      <ProjectReference Include="..\EventMonitoringSystem.Core.Domain\EventMonitoringSystem.Core.Domain.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="AutoMapper" Version="12.0.1" />
+      <PackageReference Include="Microsoft.Extensions.Logging" Version="10.0.0" />
+      <PackageReference Include="Newtonsoft.Json" Version="13.0.4" />
+    </ItemGroup>
+
+</Project>
