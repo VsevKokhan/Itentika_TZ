@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:15
+    container_name: event_processor_postgres
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: eventmonitoringdb
+    ports:
+      - "5433:5432"
+    networks:
+      - event-net
+
+networks:
+  event-net:
+    driver: bridge
